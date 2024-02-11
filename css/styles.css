@@ -539,19 +539,27 @@ img {
   fill: #f4f4fd;
 }
 
-.footer-form-container {
+/* .footer-form-container {                  vmesto footer-form??
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 80px;                  
+} */
+
+.footer-form-container {
   margin-left: 80px;
 }
 
-.footer-subcontainer {
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+/* .footer-subcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
-}
+} */
 
 .footer-form-title {
   font-weight: 500;
@@ -559,6 +567,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-input {
@@ -566,30 +575,33 @@ img {
   border-radius: 4px;
   width: 264px;
   height: 40px;
-  margin-right: 24px;
+  /* margin-right: 24px;   delete??? */
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #2e2f42;
-}
-
-.footer-input::placeholder {
-  padding: 8px 16px;
-  font-weight: 400;
+  background-color: transparent;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #fff;
+}
+
+.footer-input::placeholder {
   color: #fff;
 }
 
 .footer-form-btn {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 16px;
-  font-family: inherit;
+  /* gap: 16px;   delete?? */
+  min-width: 165px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
+  /* text-align: center; delete??? */
   color: #fff;
   border-radius: 4px;
   border: none;
@@ -599,6 +611,7 @@ img {
 }
 
 .form-footer-logo {
+  margin-left: 16px;
   fill: #fff;
 }
 
